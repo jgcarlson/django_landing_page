@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Hello, world!</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'landing_page/css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'landing_page/css/bootstrap.min.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'landing_page/css/styles.css' %}">
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    {% block content %}{% endblock %}
+    <script src="{% static 'landing_page/js/jquery.min.js' %}"></script>
+    <script src="{% static 'landing_page/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'landing_page/js/app.js' %}"></script>
+  </body>
+
+</html>

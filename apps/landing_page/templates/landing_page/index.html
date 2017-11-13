@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% block content %}
+<div class="row">
+  <div class="col-md-5" id="first">
+    <div id="content-container">
+      <div id="content">
+        <h1>{{ obj.title }}</h1>
+        <h3>{{ obj.subtitle }}</h3>
+        <p class="unpop">{{ obj.paragraph }}</p>
+        <form class="input-group">
+          <input type="text" class="form-control" placeholder="{{ obj.input_placeholder }}">
+          <span class="input-group-btn">
+            <button type="submit" class="btn btn-primary">{{ obj.button_placeholder }}</button>
+          </span>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-7" id="second">
+
+  </div>
+</div>
+
+{% endblock %}
